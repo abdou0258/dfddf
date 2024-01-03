@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn-icons-png.flaticon.com/512/5692/5692030.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/35eb5f5634.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="app">
+      <h1>Quiz</h1>
+      <form id="loginForm">
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" name="login-username" required>
+        <div class="buttons">
+
+          <button class="login-submit-btn form-btn" type="submit">Login</button>
+          <button class="register-btn form-btn-alt" type="button">Register</button>
+        </div>
+      </form>
+      
+      <form id="registerForm">
+        <label for="register-username">Username:</label>
+        <input type="text" id="register-username" name="register-username" required>
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+        <div class="buttons">
+
+          <button class="register-submit-btn form-btn" type="submit">Register</button>
+          <button class="login-btn form-btn-alt" type="button">Login</button>
+        </div>
+      </form>
+      <div class="message"></div>
+      <!-- Add this input field above the quiz section -->
+      <div class="quiz">
+        <h2 id="question">Question goes here</h2>
+        <div id="answer-btns"></div>
+        <div class="buttons">
+          <button id="back-btn" class="control-btn">Back</button>
+          <button id="next-btn" class="control-btn">Next</button>
+          <button id="reset-btn" class="control-btn">Play Again</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="user.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+* {
+  font-family: "Tilt Neon", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #001e4d;
+}
+.app{
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+.app h1{
+  font-weight: 25px;
+  color: #001e4d;
+  padding-bottom: 30px;
+}
+.quiz h2{
+  font-size: 18px;
+}
+.btn{
+  background: #fff;
+  color: #222;
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover:not([disabled]){
+  background: #222;
+  color: #fff;
+}
+.btn:disabled{
+  cursor: no-drop;
+}
+.control-btn{
+  background:#001e4d ;
+  color: white;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  cursor: pointer;
+  text-align: center;
+  
+}
+
+.selected{
+  background: #bafeff;
+}
+
+.buttons{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+.form-btn{
+  background:#03004d ;
+  color: white;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  cursor: pointer;
+  text-align: center;
+}
+.form-btn-alt{
+  background-color: transparent;
+  color: black;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: underline;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  outline: 0;
+  border: 0;
+  border-bottom: 3px solid black;
+}
+label[for='birthdate']{
+  margin-left: 80px;
+}
+.message{
+  text-align: center;
+  font-size: 30px;
+  color: #0b1931;
+  margin: 20px 0;
+}
+button:disabled{
+  background-color:#03004d;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
