@@ -4,7 +4,7 @@ const router = Router()
 
 const {storeScore,getScore} = require('../controllers/score')
 
-router.route('/score').post(storeScore).get(getScore)
+router.route('/').post(storeScore).get(getScore)
 
 
 

@@ -27,7 +27,7 @@ loginBtn.addEventListener('click', function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
+
  
   // Login
   loginForm.addEventListener("submit", async (e) => {
@@ -90,5 +90,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 6000)
     }
   });
-});
+f
 
