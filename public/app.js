@@ -179,7 +179,12 @@ async function showScore() {
     );
 
     if (previousScore !== null) {
-      questionElement.innerHTML = `You scored ${score} out of ${questions.length}. Previous score: ${previousScore.score}`;
+      if(previousScore.score<=score){
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}. Previous score: ${previousScore.score} Good Job !`;
+      }else{
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}. Previous score: ${previousScore.score} you can do better !`;
+
+      }
     } else {
       questionElement.innerHTML = `You scored ${score} out of ${questions.length}. First time!`;
     }
